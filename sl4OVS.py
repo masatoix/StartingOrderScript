@@ -1,5 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
 # %%
 import pandas as pd
 import glob
@@ -31,9 +29,3 @@ for fname in glob.glob(export_file_path+'*.xlsx'):
     df_finalize = df_change.loc[:, ['e', 'f', 'b', 'c', 'd']]
     
     df_finalize.to_excel(finalize_file_path+'f_'+file_name, index=False, header=False)
-
-
-# %%
-
-
-
